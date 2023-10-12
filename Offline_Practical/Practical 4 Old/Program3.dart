@@ -1,3 +1,4 @@
+//Pattern having all composite numbers
 /*
 
 4 6 8 9 10 
@@ -18,16 +19,6 @@ void main() {
   //patternComp(row);
 }
 
-/*
-void patternComp(int row) {
-  for (int i = 1; i <= row * row; i++) {
-    nComp(row * row);
-    if (i / row == 0) {
-      print("");
-    }
-  }
-}
-*/
 void nComp(int N) {
   int a = 0;
   for (int i = 0; i < N * N;) {
@@ -38,17 +29,24 @@ void nComp(int N) {
       }
     }
     if (count > 2) {
-      stdout.write("$a ");
+      stdout.write("$a\t");
       i++;
-    }
-
-    if (i % N == 0) {
-      print("");
+      if (i % N == 0) print("");
     }
     a++;
   }
 }
 
+/*
+void patternComp(int row) {
+  for (int i = 1; i <= row * row; i++) {
+    nComp(row * row);
+    if (i / row == 0) {
+      print("");
+    }
+  }
+}
+*/
 
 /*
 void composite(int row) {
