@@ -1,5 +1,5 @@
 class Demo {
-  Demo obj = new Demo();
+  static Demo obj = new Demo();
 
   Demo() {
     print("In constructor");
