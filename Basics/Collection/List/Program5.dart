@@ -28,5 +28,8 @@ void main() {
   print(player.length);
   print(player.reversed);
   print(player.runtimeType);
+  /*
   print(player.single);
+  Too many elements1
+  */
 }
