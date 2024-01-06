@@ -1,0 +1,97 @@
+Program1:
+
+/*
+Error : 
+
+
+Explanation : 
+  constant const can not have body
+  we have to remove body or const keyword
+*/
+
+Program2 :
+
+/*
+Error : 
+
+Constructor of same name cannot be created again
+We have to create a named constructor with diff name
+*/
+
+Prgram3 :
+
+/*
+Here both address wil be different as the provided data in parameter is different
+if it would have been the dame data then the hashcode would be smae 
+*/
+
+Program4 :
+
+/*
+  Here we have used a named parameter 
+  which if we dont pass will consider the default value given by us 
+  but if given it will replace
+  and empCount is normal argument we have to compulsary pass it in the constructor or it can be null
+*/
+
+Program5 :
+
+/*
+
+Error:
+Error here says that only one positional argument is accepted you are giving 2 
+
+Here there is error as when we are passing the named parameter value to constructor
+we have to give the name of the variable which is in class 
+other wise there is error 
+str:"Incubator" should be there
+*/
+
+Program6 :
+
+/*
+Here we can see that the the constructor is the named constructor 
+where the order of the parameter doesnot matter and we have to write the variable name is front of the value we are providing
+here even if we write the blanck constructor will do as empCount id nullable type so it can take nuull value
+and compName has already been given Deloitte as a value
+*/
+
+Program7 :
+
+/*
+Here there is error as x and y are given null values and that are not of the 
+nullable type 
+it would work if there is any chance of that it will get values in future but 
+there is no constructor or anything to assign the values to it 
+so it will give error as x and y are of int type and are given null values
+*/
+
+Program8 :
+
+/*
+if the constructor is const 
+variables in it must have to be final 
+as once the values are given to constructor should not be changed 
+as const constuctor object only one time whenever created again
+refer to the same object
+so vlaues we are assigning inside it should be final
+*/
+
+Program9:
+
+/*
+Here a is not in the field of class so we cannot write this ahead of it 
+but if we write normal a it would change the value of a in its instance
+but writing this here will not work
+*/
+
+Program10 :
+
+// here same names are not allowed in same scope
+
+Program11
+
+/*
+Here we have returned the object of the same class from the factory constructor 
+which is the main functionallity of the factory constructor
+*/

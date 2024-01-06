@@ -1,0 +1,104 @@
+Program1 :
+
+/*
+Test2 is child of Test class
+when we pass the value to Test2 constructor
+its constuctor has super.x 
+so which means it will pass that value to parent constructor
+and when we create Test obj and the value passed there weill be assigned to x in the same class
+so when we created 1st obj of Test2 the value 10 is send to Test class x 
+now x = 10;
+but the Test2 has recieved x in inheritance and obj.x will change the valie of x in Test2
+
+now obj2 we pass 30 as value of x 
+in class Test the value of x is 30 
+so after printing output will be
+ 
+ obj.x = 19
+ and obj2.x = 30 
+
+*/
+
+Program2 :
+
+/*
+here x has inherited but we have created our own x as we are not satisfied with the value from parent class so we have kept it null
+but when creating a constructor we have taken x as argument so it will not have null value 
+we have created 2 methods in the child Test2
+gun() --> which will change the value of x to 8
+  as the x is not final so we can change it as many times as we want
+fun() --> we are using fun to print the values of x in  the same class and in the paren class
+
+when we create obj x in child class = 10
+on calling gun it will change to 8
+and when calling fun () it will print
+output -->
+8
+30
+
+*/
+
+Program3 :
+
+/*
+here Test is the parent class and Test2 is the child class 
+Test2 object 10 is passed and value of x  in Test2 == 10
+obj.gun --> this will change x in test2 == 8 and y in test2 to 19 y was inherited from parent Test
+obj.fun() --> this will print the values is Test class of x and y and y in parent class aslo as it carry reference not value
+output -->
+30 
+19
+*/
+
+Program4 :
+
+/*
+here there is errror on y either we have to any default value ot y or write required in front of it or make it nullable
+*/
+
+Program5 :
+
+/*
+parentmethod call is by obj which is object of child and in child value of x is 10 and str is incubator 
+so output of parentmethod called from that object is 10 and incubator
+*/
+
+Program6 :
+
+/*
+when we create a object of Test3 first it will call the Test3 constructor and give z value 10;
+after it will take value 20 and 30 upwards to parent const
+and give y 20 and then it will again go up and give x = 30 
+
+output will be 
+in test3 
+in test
+
+*/
+
+Program7 :
+
+/*
+ here only that methods can be called which are present in parent as the obj created is of Child but 
+ reference is of parent 
+ so there would be error that fun is not present is Demo (Parent)
+*/
+
+Program8 :
+
+/*
+if you are calling super() 
+there must have to be call method in parent class
+*/
+
+Program9 :
+
+/*
+In inheritance static metod and static variables are not inherited in dart
+*/
+
+Program10 :
+/*
+here factory constructor can be created as it returns a child constructor
+normal constructor in abstract class cannot be created
+*/
